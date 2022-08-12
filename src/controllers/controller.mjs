@@ -1,4 +1,4 @@
-import { getConnection } from "../database/database.js";
+import { getConnection } from "../database/database.cjs";
 const bcrypt = require("bcrypt");
 
 const getDefault = (req, res) => {
