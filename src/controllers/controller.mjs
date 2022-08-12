@@ -1,4 +1,4 @@
-import pkg from '../database/database.cjs';
+import pkg from '../database/database.mjs';
 const { getConnection } = pkg;
 
 const bcrypt = require("bcrypt");
