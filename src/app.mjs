@@ -1,11 +1,11 @@
 import express from "express";
-
+import cors from "cors";
 // Routes
 import routes from "./routes/routes.mjs";
 
 
 const app = express();
-const cors = require('cors');
+
 
 // Settings
 const port = process.env.PORT || 3000;
