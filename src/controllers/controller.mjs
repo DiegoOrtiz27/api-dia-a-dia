@@ -1,5 +1,5 @@
 import getConnection from "../database/database.mjs";
-const bcrypt = require("bcrypt");
+import bcrypt from "bcrypt";
 
 const getDefault = (req, res) => {
   res.json("Hola Mundo");
