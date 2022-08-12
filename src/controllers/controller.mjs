@@ -1,6 +1,4 @@
-import pkg from '../database/database.mjs';
-const { getConnection } = pkg;
-
+import { getConnection } from "../database/database.mjs";
 const bcrypt = require("bcrypt");
 
 const getDefault = (req, res) => {
