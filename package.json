@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "type":"module",
   "scripts": {
     "start": "node src/index.js",
     "babel-node": "babel-node --presets=@babel/preset-env",
