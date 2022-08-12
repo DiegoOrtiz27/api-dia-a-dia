@@ -122,7 +122,7 @@ const getObjetive = async (req, res) => {
     INNER JOIN movimientos ON objetivos.movimientoid = movimientos.id_movimiento 
     INNER JOIN usuarios ON movimientos.usuarioid = usuarios.id_usuario
     INNER JOIN pyg ON movimientos.pygid = pyg.id_pyg
-    WHERE usuarios.id_usuario= ? AND fecha <= NOW() AND fecha >= DATE_ADD(NOW(), INTERVAL ? DAY)`;
+    WHERE usuarios.id_usuario= ? AND fecha <= NOW() AND fecha >= DATE_ADD(NOW(), INTERVAL -? DAY)`;
     const connection = await getConnection();
     let result = await connection.query(sql, [userId, currentDay]);
     res.json(result);
