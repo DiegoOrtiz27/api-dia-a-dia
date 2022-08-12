@@ -1,5 +1,5 @@
 const mysql = require('promise-mysql');
-import config from "../config.mjs";
+const config = require('../config.mjs');
 
 const connection = mysql.createConnection({
     host: config.host,
