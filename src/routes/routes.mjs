@@ -1,5 +1,5 @@
 import { Router } from "express";
-import {methods as controller} from "../controllers/controller";
+import {methods as controller} from "../controllers/controller.mjs";
 const router = Router();
 
 

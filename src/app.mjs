@@ -1,7 +1,7 @@
 import express from "express";
 
 // Routes
-import routes from "./routes/routes";
+import routes from "./routes/routes.mjs";
 
 
 const app = express();
