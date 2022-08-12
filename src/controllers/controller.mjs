@@ -33,7 +33,7 @@ const getCurrentMonthTotal = async (req, res) => {
 
 const getLastTotal = async (req, res) => {
   try {
-    let sql = `SELECT id_total AS "id", total, usuarioid, fecha FROM totales WHERE usuarioid = ? ORDER by fecha asc LIMIT 1`;
+    let sql = `SELECT * FROM totales WHERE usuarioId = ? ORDER BY Id_total DESC LIMIT 1`;
     const connection = await getConnection();
     let result = await connection.query(sql, req.params.userid);
     res.json(result);
