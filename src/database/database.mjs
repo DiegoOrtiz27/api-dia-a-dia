@@ -8,6 +8,6 @@ const connection = mysql.createConnection({
     password: config.password
 });
 
-export default getConnection = () => {
+export function getConnection() {
     return connection;
 };
